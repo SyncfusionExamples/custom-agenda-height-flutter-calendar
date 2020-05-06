@@ -75,6 +75,6 @@ body: Column(
 
 **Screenshots**
 
-<img alt="Agenda view height1" src="http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img1.jpeg" width="250" height="400" />|
-<img alt="Agenda view height2" src="http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img2.jpeg" width="250" height="400" />|
-<img alt="Agenda view height3" src="http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img3.jpeg" width="250" height="400" />|
+<img alt="Agenda view height1" src="http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img1.jpeg" width="250" height="500" />|
+<img alt="Agenda view height2" src="http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img2.jpeg" width="250" height="500" />|
+<img alt="Agenda view height3" src="http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img3.jpeg" width="250" height="500" />|
