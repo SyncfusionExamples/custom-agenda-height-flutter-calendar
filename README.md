@@ -71,3 +71,12 @@ body: Column(
   ],
 ),
 ```
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/11013/how-to-customize-agenda-view-height-based-on-the-flutter-event-calendar-sfcalendar-widget)**
+
+**Screenshots**
+
+![Agenda view height1](http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img1.jpeg)
+
+![Agenda view height2](http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img2.jpeg)
+
+![Agenda view height3](http://www.syncfusion.com/uploads/user/kb/flut/flut-670/flut-670_img3.jpeg)
