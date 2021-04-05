@@ -24,14 +24,13 @@ class AgendaHeight extends StatefulWidget {
 List<String> size = <String>[ '50', '40', '30','20'];
 
 class ScheduleExample extends State<AgendaHeight> {
-  CalendarView _calendarView;
-  List<Appointment> appointmentDetails;
-  double height;
+  CalendarController _controller=CalendarController();
+  List<Appointment>? appointmentDetails;
+  double? height;
 
   @override
   void initState() {
     appointmentDetails = <Appointment>[];
-    _calendarView = CalendarView.month;
     height = 0.0;
     super.initState();
   }
@@ -71,10 +70,11 @@ class ScheduleExample extends State<AgendaHeight> {
         children: <Widget>[
           Expanded(
             child: SfCalendar(
-              view: _calendarView,
+              view: CalendarView.month,
+              controller: _controller,
               dataSource: getCalendarDataSource(),
               monthViewSettings:
-                  MonthViewSettings(showAgenda: true, agendaViewHeight: height),
+              MonthViewSettings(showAgenda: true, agendaViewHeight: height!),
             ),
           ),
         ],
