@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
-import 'package:intl/intl.dart';
 
 void main() => runApp(AgendaViewHeight());
 
@@ -24,16 +23,8 @@ class AgendaHeight extends StatefulWidget {
 List<String> size = <String>[ '50', '40', '30','20'];
 
 class ScheduleExample extends State<AgendaHeight> {
-  CalendarController _controller=CalendarController();
-  List<Appointment>? appointmentDetails;
-  double? height;
-
-  @override
-  void initState() {
-    appointmentDetails = <Appointment>[];
-    height = 0.0;
-    super.initState();
-  }
+  final CalendarController _controller=CalendarController();
+  double _height=0.0;
 
   @override
   Widget build(BuildContext context) {
@@ -53,13 +44,13 @@ class ScheduleExample extends State<AgendaHeight> {
             onSelected: (String value) {
               setState(() {
                 if (value == '50') {
-                  height = MediaQuery.of(context).size.height/2;
+                  _height = MediaQuery.of(context).size.height/2;
                 } else if (value == '40') {
-                  height = MediaQuery.of(context).size.height/3;
+                  _height = MediaQuery.of(context).size.height/3;
                 } else if (value == '30') {
-                  height = MediaQuery.of(context).size.height/4;
+                  _height = MediaQuery.of(context).size.height/4;
                 } else if (value == '20') {
-                  height = MediaQuery.of(context).size.height/5;
+                  _height = MediaQuery.of(context).size.height/5;
                 }
               });
             },
@@ -74,7 +65,7 @@ class ScheduleExample extends State<AgendaHeight> {
               controller: _controller,
               dataSource: getCalendarDataSource(),
               monthViewSettings:
-              MonthViewSettings(showAgenda: true, agendaViewHeight: height!),
+              MonthViewSettings(showAgenda: true, agendaViewHeight: _height),
             ),
           ),
         ],
