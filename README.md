@@ -4,6 +4,8 @@ A quick-start example to help you to customize agenda view height based on the F
 
 The agenda view height in the Flutter Event Calendar can be customised using the `agendaViewHeight` property of `MonthViewSettings` in the calendar widget.
 
+![AgendaHeight](https://user-images.githubusercontent.com/46158936/209653224-42278ed4-e920-4fa8-b85a-d05905e070f3.jpeg)
+
 For more details, you can refer to our [KB](https://www.syncfusion.com/kb/11013/how-to-customize-agenda-view-height-based-on-the-flutter-calendar-widget-height) documentation.
 
 ## Requirements to run the demo
