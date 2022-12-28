@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(AgendaViewHeight());
+void main() => runApp(const AgendaViewHeight());
 
 class AgendaViewHeight extends StatelessWidget {
+  const AgendaViewHeight({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: AgendaHeight(),
     );
@@ -16,6 +16,8 @@ class AgendaViewHeight extends StatelessWidget {
 }
 
 class AgendaHeight extends StatefulWidget {
+  const AgendaHeight({super.key});
+
   @override
   State<StatefulWidget> createState() => ScheduleExample();
 }
@@ -32,12 +34,12 @@ class ScheduleExample extends State<AgendaHeight> {
       appBar: AppBar(
         actions: <Widget>[
           PopupMenuButton<String>(
-            icon: Icon(Icons.settings),
+            icon: const Icon(Icons.settings),
             itemBuilder: (BuildContext context) {
               return size.map((String choice) {
                 return PopupMenuItem<String>(
                   value: choice,
-                  child: Text('$choice',),
+                  child: Text(choice,),
                 );
               }).toList();
             },
@@ -79,31 +81,31 @@ class ScheduleExample extends State<AgendaHeight> {
       startTime: DateTime.now(),
       endTime: DateTime.now().add(const Duration(hours: 1)),
       subject: 'Meeting',
-      color: Color(0xFFfb21f66),
+      color: const Color(0xFFfb21f66),
     ));
     appointments.add(Appointment(
-      startTime: DateTime.now().add(Duration(days: -2, hours: 4)),
-      endTime: DateTime.now().add(Duration(days: -2, hours: 5)),
+      startTime: DateTime.now().add(const Duration(days: -2, hours: 4)),
+      endTime: DateTime.now().add(const Duration(days: -2, hours: 5)),
       subject: 'Development Meeting   New York, U.S.A',
-      color: Color(0xFFf527318),
+      color: const Color(0xFFf527318),
     ));
     appointments.add(Appointment(
-      startTime: DateTime.now().add(Duration(days: -2, hours: 3)),
-      endTime: DateTime.now().add(Duration(days: -2, hours: 4)),
+      startTime: DateTime.now().add(const Duration(days: -2, hours: 3)),
+      endTime: DateTime.now().add(const Duration(days: -2, hours: 4)),
       subject: 'Project Plan Meeting   Kuala Lumpur, Malaysia',
-      color: Color(0xFFfb21f66),
+      color: const Color(0xFFfb21f66),
     ));
     appointments.add(Appointment(
-      startTime: DateTime.now().add(Duration(days: -2, hours: 2)),
-      endTime: DateTime.now().add(Duration(days: -2, hours: 3)),
+      startTime: DateTime.now().add(const Duration(days: -2, hours: 2)),
+      endTime: DateTime.now().add(const Duration(days: -2, hours: 3)),
       subject: 'Support - Web Meeting   Dubai, UAE',
-      color: Color(0xFFf3282b8),
+      color: const Color(0xFFf3282b8),
     ));
     appointments.add(Appointment(
-      startTime: DateTime.now().add(Duration(days: -2, hours: 1)),
-      endTime: DateTime.now().add(Duration(days: -2, hours: 2)),
+      startTime: DateTime.now().add(const Duration(days: -2, hours: 1)),
+      endTime: DateTime.now().add(const Duration(days: -2, hours: 2)),
       subject: 'Project Release Meeting   Istanbul, Turkey',
-      color: Color(0xFFf2a7886),
+      color: const Color(0xFFf2a7886),
     ));
     appointments.add(Appointment(
         startTime: DateTime.now().add(const Duration(hours: 4, days: -1)),
@@ -121,7 +123,7 @@ class ScheduleExample extends State<AgendaHeight> {
       startTime: DateTime.now().add(const Duration(hours: 11, days: -2)),
       endTime: DateTime.now().add(const Duration(hours: 12, days: -2)),
       subject: 'Customer Meeting   Tokyo, Japan',
-      color: Color(0xFFffb8d62),
+      color: const Color(0xFFffb8d62),
     ));
     appointments.add(Appointment(
       startTime: DateTime.now().add(const Duration(hours: 6, days: 2)),
